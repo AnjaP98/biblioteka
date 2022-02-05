@@ -26,16 +26,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //Route::get('/sveknjige', [App\Http\Controllers\KnjigaClanaController::class,'index'] )->name('sveknjige');
 //Route::get('/sviclanovi', [App\Http\Controllers\ClanController::class, 'index'])->name('sviclanovi');
 
-// Route::group(['middleware' => ['auth:sanctum']], function () {
-//     Route::get('/profile', function(Request $request) {
-//         return auth()->user();
-//     });
-   
-
-//     // API route for logout user
-//     Route::post('/logout', [AuthController::class, 'logout']);
-// });
-
 
 // Route::post('/register', [AuthController::class, 'register']);
 // Route::post('/login', [AuthController::class, 'login']);
@@ -44,5 +34,3 @@ Route::get('obrisiclana/{id}',[App\Http\Controllers\ClanController::class,'destr
 Route::get('obrisiknjigu/{id}',[App\Http\Controllers\KnjigaClanaController::class,'destroy'])->name('obrisiknjigu');
 
 
-Route::post('/register',[RegisterController::class,'register']);
-Route::post('/login',[RegisterController::class,'login']);
