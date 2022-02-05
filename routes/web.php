@@ -46,10 +46,7 @@ Route::post('dodajknjigu',[App\Http\Controllers\KnjigaClanaController::class,'st
 Route::get('obrisiclana/{id}',[App\Http\Controllers\ClanController::class,'destroy'])->name('obrisiclana');
 Route::get('obrisiknjigu/{id}',[App\Http\Controllers\KnjigaClanaController::class,'destroy'])->name('obrisiknjigu');
 
-//Route::get('izmeniknjigu',[App\Http\Controllers\KnjigaClanaController::class,'edit'])->name('izmeniknjigu');
-//Route::get('izmeniknjigu/{id}',[App\Http\Controllers\KnjigaClanaController::class,'show'])->name('izmeniknjigu');
-//Route::post('izmeniknjigu/{id}',[App\Http\Controllers\KnjigaClanaController::class,'edit'])->name('izmeniknjigu');;
 
-Route::get('/register', [AuthController::class, 'register']);
-Route::get('/login', [AuthController::class, 'login']);
+
+
 
